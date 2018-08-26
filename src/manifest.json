@@ -1,0 +1,13 @@
+{
+  "name": "Github Discount Expiration Silencer",
+  "version": "1.0",
+  "description": "Gets rid of the annoying banner when your Github discount expires",
+  "manifest_version": 2,
+  "permissions": ["tabs", "*://*.github.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["*://*.github.com/*"],
+      "js": ["silence.js"]
+    }
+  ]
+}
